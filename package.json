@@ -15,7 +15,12 @@
     "astro-icon": "^0.7.3"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1",
     "astro": "^1.4.4",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "wrangler": "^2.6.2"
+  },
+  "volta": {
+    "node": "17.9.1"
   }
 }
