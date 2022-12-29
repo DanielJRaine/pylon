@@ -21,15 +21,15 @@ import { Icon } from 'astro-icon'
     <span>Remember me</span>
   </label>
   <a href="#">Forgot password?</a>
-</form> 
+</form>
 
 <script>
   // variables
   const form = document.querySelector('.login-form')
-  const notification = form.querySelector('.notification')
-  const emailInput = form.querySelector('input[name="email"]')
-  const passwordInput = form.querySelector('input[name="password"]')
-  const submitButton = form.querySelector('button')
+  const notification = form.querySelector('.notification') as HTMLElement
+  const emailInput = form.querySelector('input[name="email"]') as HTMLInputElement
+  const passwordInput = form.querySelector('input[name="password"]') as HTMLInputElement
+  const submitButton = form.querySelector('button') as HTMLButtonElement
 
   // execution
   notification.style.display = 'none'
