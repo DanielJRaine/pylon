@@ -819,7 +819,7 @@
   resolved "https://registry.yarnpkg.com/@vscode/l10n/-/l10n-0.0.10.tgz#9c513107c690c0dd16e3ec61e453743de15ebdb0"
   integrity sha512-E1OCmDcDWa0Ya7vtSjp/XfHFGqYJfh+YPC1RkATU71fTac+j1JjCcB3qwSzmlKAighx2WxhLlfhS0RwAN++PFQ==
 
-accessible-astro-components@^1.5.7:
+accessible-astro-components@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/accessible-astro-components/-/accessible-astro-components-1.6.1.tgz#abbadfb2f548d434554a4ed8efeb1ba4a6eb2ece"
   integrity sha512-R8smU769gah+zz7VruKv+Kzl0GLXdx8ZRf4Dhr1vqpnycqck8TrZpm7+knPYpy0FAtTZDg1tc1fLLrsxnGF4Fg==

@@ -61,17 +61,22 @@ import { Icon } from 'astro-icon'
 <script>
   // variables
   const mainNav = document.querySelector('#main-navigation')
-  const mainMenu = mainNav.querySelector('ul')
+  const mainMenu = mainNav.querySelector('ul') as HTMLElement
   const toggleExpandedView = document.querySelector('.toggle-expanded-view')
   const menuIconLabels = [...mainNav.querySelectorAll('.sr-only')]
   const mediaQuery = window.matchMedia('(min-width: 48em)')
   let isMenuExpanded = localStorage.getItem('isMenuExpanded')
 
-  // functions
+
+  interface MenuItem extends HTMLElement {
+    pathname: string
+  }
+
   const setActiveMenuItem = () => {
     const menuItems = [...mainMenu.querySelectorAll('a:not([rel*="external"])')]
 
     menuItems.forEach(menuItem => {
+      // @ts-ignore
       if (menuItem.pathname === window.location.pathname) {
         menuItem.classList.add('is-active')
         menuItem.setAttribute('aria-current', 'page')
@@ -117,7 +122,8 @@ import { Icon } from 'astro-icon'
 
   // execution
   mainMenu && mainMenu.addEventListener('keydown', event => {
-    const currentMenuItem = event.target.closest('li')
+    const eventTarget = event.target as Element
+    const currentMenuItem = eventTarget.closest('li')
     const menuItems = [...mainMenu.querySelectorAll('.menu-item')]
     const currentIndex = menuItems.findIndex(item => item === currentMenuItem)
 

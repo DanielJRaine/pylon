@@ -1,7 +1,6 @@
 ---
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import EmpyState from '../components/EmpyState.astro'
-import { Modal } from 'accessible-astro-components'
 ---
 
 <DefaultLayout title="Messages">
@@ -16,13 +15,6 @@ import { Modal } from 'accessible-astro-components'
         You haven't added any messages yet. Start by adding some.
       </EmpyState>
       <button id="modal-trigger" class="button color-secondary">Add your first message</button>
-      <Modal
-        triggerId="modal-trigger"
-        title="Add message"
-        closeText="Cancel"
-      >
-        <p>You can use this component to include a form that adds a new message to the list.</p>
-      </Modal>
     </div>
   </section>
 </DefaultLayout>
