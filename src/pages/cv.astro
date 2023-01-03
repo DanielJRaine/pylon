@@ -1,0 +1,20 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import EmptyState from '../components/EmptyState.astro'
+---
+
+<DefaultLayout title="CV">
+  <section>
+    <h1>CV</h1><br>
+    <p class="size-20">Lorem ipsum dolor sit amet.</p>
+  </section>
+  <section class="margin-32">
+    <div class="space-content">
+      <h2>CV overview</h2>
+      <EmptyState>
+        You haven't added anything yet.
+      </EmptyState>
+      <button id="modal-trigger" class="button color-secondary">Add</button>
+    </div>
+  </section>
+</DefaultLayout>

@@ -15,11 +15,11 @@ npm install && npm start
 - Contains a `login.astro` page with an example login using the `localStorage` and a separate `LoginLayout.astro` layout
 - `login.astro` contains example login data and a warning notification for when the credentials are incorrect
 - Contains a dashboard example in the `index.astro` page using the `DefaultLayout.astro` layout
-- Several examples of admin pages such as `media.astro`, `messages.astro`, `products.astro`, `settings.astro` and `users.astro`
+- Several examples of admin pages such as `media.astro`, `messages.astro`, `projects.astro`, `settings.astro` and `users.astro`
 - `Media.astro` component for images, used on the `media.astro` page *
 - `Pagination.astro` component for paginating results, used on the `media.astro` page *
 - `DashboardWidget.astro` component serves as an example for the dashboard on `index.astro`
-- `EmpyState.astro` component which can be displayed on pages that don't have any data yet
+- `EmptyState.astro` component which can be displayed on pages that don't have any data yet
 - `LoginForm.astro` component with a basic accessible login form and some form controls
 - `SkipLinks.astro` component to skip to either the main menu or the main content *
 - `Navigation.astro` component with keyboard accessible navigation (arrow keys, escape key)

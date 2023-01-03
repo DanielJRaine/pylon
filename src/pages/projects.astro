@@ -1,0 +1,20 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import EmptyState from '../components/EmptyState.astro'
+---
+
+<DefaultLayout title="Projects">
+  <section>
+    <h1>Projects</h1><br>
+    <p class="size-20">Lorem ipsum dolor sit amet.</p>
+  </section>
+  <section class="margin-32">
+    <div class="space-content">
+      <h2>Project overview</h2>
+      <EmptyState>
+        You haven't added any projects yet. Start by adding some.
+      </EmptyState>
+      <button id="modal-trigger" class="button color-secondary">Add your first project</button>
+    </div>
+  </section>
+</DefaultLayout>
